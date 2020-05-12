@@ -11,6 +11,6 @@ I have a passion for software engineering and I believe I have the creativity to
 
 ## Links
 [GitHub (eliross84)](https://github.com/eliross84)
-\n
+<br />
 [BitBucket](https://bitbucket.org/eliross84/)
 
