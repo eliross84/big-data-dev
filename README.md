@@ -14,3 +14,6 @@ I have a passion for software engineering and I believe I have the creativity to
 <br />
 [BitBucket](https://bitbucket.org/eliross84/)
 
+
+## Notes
+##### Wednesday, 13 May, 2020**
