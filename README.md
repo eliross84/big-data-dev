@@ -16,4 +16,32 @@ I have a passion for software engineering and I believe I have the creativity to
 
 
 ## Notes
-##### Wednesday, 13 May, 2020**
+#### Wednesday, 13 May, 2020
+What is Big Data?
+The Five V's: <br />
+- Velocity: the speed data accumulates
+- Volume: scale of the increasing storage of data
+- Variety: the diversity of data (structured and unstructured)
+- Veracity: conformity to facts/accuracy
+- Value: the benefits of evaluating the data
+
+A common application of big data are Recommendation Engines, which are used for a lot of marketing purposes based upon the streamed data that is popular to a particular individual's device. Another may be Virtual assistants such as Alexa or Siri. 
+
+Cloud computing has contributed hugely to the launch of the Big Data era. This lowers the price of storage and computing. 
+
+Sources of Big Data: 
+1. People-generated data
+2. Machine-generated data
+3. Business-generated data
+
+- Structured
+    - Data that is organized, labeled, and follows a strict model
+    - ex: relational databases and spreadsheets
+- Unstructured 
+    - Makes up approximately 80% of data in the world
+    - Given in a text form and does not have a predefined model
+    - ex: square kilometer array, data explosion, social media
+- Semi-structured
+    - Combination of structured and unstructured
+    - ex: XML or JSON
+
