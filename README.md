@@ -58,3 +58,25 @@ Data Science Process:
     - Do the results make sense and are they explanatory?
 6. Take Action
     - Make decisions 
+
+Components and Ecosystems of Big Data:
+- Techniques and Analyzing Data
+    - A/B Testing
+    - Machine Learning
+    - Natural Language Processing
+- Big Data Technologies (structured and unstructured)
+    - Business Intelligence
+    - Cloud Computing
+    - Databases
+- Visualization
+    - Charts
+    - Graphs
+    - Other Displays
+
+*Hadoop*: open-source software framework used to store and process huge amounts of data.
+    - Node: any endpoint
+    - Rack: a collection of nodes
+    - Hadoop cluster: a collection of racks
+
+*Data Warehouses*: deliver deep insight with advanced in-database analytics and provide online analytic processing. 
+
