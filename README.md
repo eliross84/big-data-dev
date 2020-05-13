@@ -45,3 +45,16 @@ Sources of Big Data:
     - Combination of structured and unstructured
     - ex: XML or JSON
 
+Data Science Process: 
+1. Determine the problem
+    - What is the project/business objective?
+2. Collect Data
+    - Which data is relevant, and are there privacy issues?
+3. Explore Data
+    - Plot the data, are there patterns?
+4. Analyze Data
+    - Build a model and validate it.
+5. Storytelling: Visualization + Communication
+    - Do the results make sense and are they explanatory?
+6. Take Action
+    - Make decisions 
