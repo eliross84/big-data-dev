@@ -116,3 +116,66 @@ Components and Ecosystems of Big Data:
 - Not good for intensive calculations with with little data
 
 ##### Hadoop Architecture
+*Terminology*: 
+- Node: a computer and/or endpoint
+- Rack: a collection of nodes that are stored close together and typically connected to the same network switch
+- Cluster: a collection of racks
+
+**Hadoop Main Components**:
+1. Distributed File System (HDFS)
+    - Runs on top of the existing file system
+    - Designed to tolerate high component failure rate (reliable through replication)
+    - Designed to handle very large files
+        - Large streaming data access patterns
+    - File blocks are not the same as operating system's file blocks (default to 64MB and are fixed in size)
+        - These work really well with replication
+2. MapReduce Engine
+    - Framework for perofrming calculations on the data in the file system
+    - Has a built-in resource manager and scheduler
+    - NameNode: keeps all metadata and is recommended to have the maximum amount of RAM possible
+    - DataNode: Manages blocks with data nd serves them to the clients
+        - Reports to NameNode the list of blocks it stores
+    - JobTracker: One per cluster, and schedules/monitors jobs on TaskTrackers
+    - TaskTracker: executes operations/tasks and reads blocks from DataNodes. 
+
+**Yet Another Resource Negotiator (YARN)**
+- Provide generic scheduling and resource management
+- More efficient schedling and workload management
+
+*Hadoop High Availability*
+- Two NameNode's (one active and one standby)
+- Three (must be an odd number) of JournalNodes that keep track of which NameNode is being used and if the active fails then fall onto the standby
+- Each NameNode has a Namespace and contains a pool of files that belong to it
+
+**HDFS Command Line**
+- All commands begin with `hdfs dfs <args>`
+- Listing all contents `hdfs dfs -ls`
+- Example of moving a file from regular file system to HDFS
+```hdfs dfs -cp file:///sampleData/spark/myfile.txt hdfs://rvm.svl.ibm.com:8020/user/spark/test/myfile.txt```
+*Commands*:
+- copyFromLocal / put
+    - Copy files from the local filesystem to HDFS
+- copyToLocal / get
+    - Copies files from HDFS to the local filesystem
+- getMerge
+    - Gets all files in the directories that match the source pattern
+    - Merges and sorts them to only one file on local filesystem
+- setRep
+    - Sets the replication of a file
+    - Can be executed recursively to change an entire tree
+
+**Hadoop Administration**
+- Adding nodes can be done from the Ambari Web Console
+- Need IP address or hostname of node to add and must be reachable
+- Run `hdfs dfsadmin -report` to check disk space 
+
+**Configuration Files**
+- core-site.xml: configures settings for I/O settings that are common to HDFS and MapTeduce
+- hdfs-site.xml: configures settings for HDFS daemons, the NameNode, the secondary NameNode, and the DataNode's
+- mapred-site.xml: configures settings for MapReduce daemons and JobTracker, and TaskTrackers
+
+**MapReduce**
+- Processes huge datasets for certain kinds of distributable problems using a large number of node
+    - Map: master node partitions that input into smaller sub-problems (distributes these to the workor nodes)
+    - Reduce: amster node then takes the answers to all the sub-problems (combines them in some way to get the output)
+- *Distributed Mergesort Engine*: uses Map tasks to produce unstructured data into key/value pairs and lists
