@@ -93,3 +93,26 @@ Components and Ecosystems of Big Data:
 
 *Data Warehouses*: deliver deep insight with advanced in-database analytics and provide online analytic processing. 
 
+##### What is Hadoop?
+- Can handle all three varieties of data
+- Replicates its data across multiple computers, therefore has a failover system as a safety net. 
+    - Does not support OTLP, OLAP, and DSS
+- Not a replacement for an online relational database system
+- Other open source projects that can be used with Hadoop
+    - Eclipse (IDE)
+    - Lucene (text-search engine library)
+    - HBase (Hadoop database)
+    - Hive (Data warehouse)
+    - Pig (language that is used to analyze large datasets)
+    - Spark (cluster keeping framework)
+    - Zookeeper 
+    - Apache Ambari
+    - Avro
+    - Unstructured Information Management Architecture
+- Not good to process transactions
+- Not good when work cannot be parallelized
+- Not good for low latency data access
+- Not good for processing lots of small files
+- Not good for intensive calculations with with little data
+
+##### Hadoop Architecture
