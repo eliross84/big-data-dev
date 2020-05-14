@@ -179,3 +179,35 @@ Components and Ecosystems of Big Data:
     - Map: master node partitions that input into smaller sub-problems (distributes these to the workor nodes)
     - Reduce: amster node then takes the answers to all the sub-problems (combines them in some way to get the output)
 - *Distributed Mergesort Engine*: uses Map tasks to produce unstructured data into key/value pairs and lists
+
+**Pig**
+Data flow language
+
+- Developed at Yahoo!
+- Can operate on complex, nested data structures
+- Relationally complete
+- Running Pig
+    - Script `pig scriptfile.pig`
+    - Grunt `pig`
+    - Call in to Pig from Java
+
+**Hive**
+Declarative language (SQL dialect)
+
+- Developed at Facebook
+- Relationally complete
+- Running Hive
+    - Interactive `hive`
+    - Script `hive -f myscript`
+    - Inline `hive -e 'SELECT * FROM mytable'`
+
+**Flume**
+Service for moving large amounts of data around a cluster soon after the data is produced.
+
+- Building chains of logical nodes that have a source and a sink
+
+**Oozie**
+Manages Hadoop jobs
+
+**Sqoop**
+Transfers data between Hadoop and relational databases and uses MapReduce to import and export the data.
