@@ -230,3 +230,20 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
 ##### Zookeeper
 - A centralized service used to maintain naming and configuration data to provide flexible and robust synchronization within distributed systems. 
 - Performs instant failover migration, due to redundancy. 
+
+**Types of Zookeeper Nodes within ensembles (clusters)**
+- *Leader*: All write's go through here and are distributed to the follower's.
+- *Follower*: there to read/write data to the requests given, and are there just in case the leader node fails and one has to step up as the leader node. 
+- *Observer*: addresses scale problem, used to improve the scalibility of the followers and their storage.
+
+- Topics: a particular stream of data
+    - Similar to a table in a database
+    - You can have as many topics as you want
+    - A topic is identified by its name
+- Partitions: within a Topic
+    - Indexed starting at zero
+    - Each message within a partition gets an id called an offset (also indexed starting at zero)
+    - All partitions are independent
+
+- Data in Kafka is kept for a limited time
+- Data is immutable once written to a partition in an offset
