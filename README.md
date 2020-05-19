@@ -216,16 +216,23 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
 #### Monday, 18 May, 2020
 
 ##### Maven
-- Checking for the versin `mvn --version`
+- Yiddish for "Accumulator of Knowledge"
+    - Manages builds, dependencies/versions,and documentation
+    - Universal build system (Ant, C, xml)
+    - Easy build process
+    - Make new features easy
+- Checking for the version `mvn --version`
 - For creating a project be sure to make a storage directory and then on that directory run a command similar to:
 ``mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false``
 
 - *POM.xml*: the core of a maven project's coniguration. Contains the majority of the information required to build a project in just the way you want. 
+    - These can be inherited if the child uses the <parent> tag in their pom.xml file.
 - To build the project you may run `mvn package`
 - Key directories of maven will be 
     - `src/main/java` : contains code for namespace
     - `src/main/resources`: contains non-code 
     - `POM.xml`: uses XML to hold information about the project, its dependencies, etc. 
+
 
 ##### Zookeeper
 - A centralized service used to maintain naming and configuration data to provide flexible and robust synchronization within distributed systems. 
@@ -247,3 +254,4 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
 
 - Data in Kafka is kept for a limited time
 - Data is immutable once written to a partition in an offset
+
