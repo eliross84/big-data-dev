@@ -255,3 +255,47 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
 - Data in Kafka is kept for a limited time
 - Data is immutable once written to a partition in an offset
 
+
+#### Wednesday 20 May, 2020
+
+##### Python Basics
+- Hashtags are used for commenting
+- print() is used to print to the console.
+- Types
+    - Integers are int
+    - Decimal numbers are float
+    - Strings are str
+    - Boolean bool (must be a True or a False [capitalized])
+
+- Typecasting example
+    - `float(2):2.0` integer to a float
+
+- String operations:
+    - Ways to manipulate `Name = "Michael Jackson"`
+        - `Name[0:4]` is Mich
+        - `Name[::2]` is McalJcsn (Every even indice)
+        - `Name[0:5:2]` is Mca (Every even indice up to 5)
+        - `len(Name)` is 15
+        - `~.upper()` is MICHAEL JACKSON
+        - `~.lower()` is michael jackson
+        - `Name.replace('Jackson','Jordon')` is Michael Jordan
+        - `Name.find('el')` is 5
+
+-Tuples
+    - Example tuple: `Ratings = (10,9,6,5,10,8,9,6,2)`
+    - All elements can be different types and they are immutable
+    - Tuples may be concatenated together
+    - Slicing `tuple = ("disco", 10, 1.2, "hard rock", 10)`
+        - `tuple[0:3]` is ("disco", 10, 1.2)
+
+-Lists
+    - Example list: `L = ["Michael", 10.1, 1982]`
+    - Lists are Mutable
+    - Ways to manipulate `L = ["Michael", 10.1, 1982]`
+        - `L.extend(["pop", 10])` is ["Michael", 10.1, 1982,"pop", 10]
+        - `L.append(["pop", 10])` is ["Michael", 10.1, 1982,["pop", 10]]
+        - `del(L[0])` is [10.1, 1982]
+        - `.split()` can split a string via the spaces.
+            - Also specific characters to split at can be passed as a parameter
+        - `M = L[:]` makes a copy of L and makes a new list, not using the reference
+        
