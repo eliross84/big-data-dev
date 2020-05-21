@@ -328,15 +328,28 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
     - `== or !=` produces True or False
     - `>, <, >=, or <=` produces True or False
 
-- Branching
-    ``if(age > 18):``
-    ``  print("You can enter")``
-    ``elif(age == 18):``
-    ``  print("go to a different place")``
-    ``else:``
+- Branching <br/>
+    ``if(age > 18):`` <br/>
+    ``  print("You can enter")``<br/>
+    ``elif(age == 18):``<br/>
+    ``  print("go to a different place")``<br/>
+    ``else:``<br/>
     ``  print("You cannot enter")``
 
 - Logic Operators
     - `not(*some value*)` returns the opposite of its contents
     - `or(value1, value2)` returns false only if both are false, the rest are true
     - `and(value1, value2)` returns true only if both are true, the rest are false
+
+- Loops
+    - `range(N)` gives a list of range 0...N-1
+        - If two parameters (`range(M,N)`) the list output is M...N-1
+    - for loop syntax: <br/>
+        `for i in range(M,N):`<br/>
+        `*some kind of operation*`
+        - for is possible also without using an index
+    - enumerate takes an index, that indexes value and makes them available to manipulate <br/>
+        `for i,square in enumerate(squares):` <br/>
+        `*square and i can be used for value and index*`
+    - while loops are possible as well based on True or False in the initial expression
+
