@@ -353,3 +353,28 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
         `*square and i can be used for value and index*`
     - while loops are possible as well based on True or False in the initial expression
 
+- Functions
+    - Built-in functions:
+        - `len()` returns the length of the list, tuple, etc. 
+        - `sum()` returns the sum of the values inside of a list, tuple, etc. 
+        - `sorted()` returns a list that is sorted via the argument
+        - `.sort()` sorts a list that is provided
+    - Building a function <br/>
+        `def add1(a):` <br/>
+        `b = a + 1` <br/>
+        `return b`
+    - If a parameter of a tuple of list is passed with an asterik, this passes all of its values in to be evaluated
+    - If a variable within a function has the word global in front of it then this makes it a global instead of just local value
+
+- Object/Classes
+    - All types are an object in python
+    - `.type()` will return its type
+    - Creating classes:
+        `class Circle(object):` <br/>
+        `def __init__(self, radius, color):` <br/>
+        `self.radius = radius;`<br/>
+        `self.color = color;`
+    - This can be initialized as so `c1 = Circle(10, "red")`
+    - An attribute may be accessed from the object such as `c1.radius`
+    - When creating an instance method the self parameter must be placed at the beginning of the parameters in the method
+    
