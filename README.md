@@ -281,14 +281,14 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
         - `Name.replace('Jackson','Jordon')` is Michael Jordan
         - `Name.find('el')` is 5
 
--Tuples
+- Tuples
     - Example tuple: `Ratings = (10,9,6,5,10,8,9,6,2)`
     - All elements can be different types and they are immutable
     - Tuples may be concatenated together
     - Slicing `tuple = ("disco", 10, 1.2, "hard rock", 10)`
         - `tuple[0:3]` is ("disco", 10, 1.2)
 
--Lists
+- Lists
     - Example list: `L = ["Michael", 10.1, 1982]`
     - Lists are Mutable
     - Ways to manipulate `L = ["Michael", 10.1, 1982]`
@@ -298,4 +298,29 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
         - `.split()` can split a string via the spaces.
             - Also specific characters to split at can be passed as a parameter
         - `M = L[:]` makes a copy of L and makes a new list, not using the reference
+
+- Sets
+    - A type of collection, different Python types can be used in one set
+    - Unordered (no indexing)
+    - Example set = `Set1 = {"pop", "rock", "soul", "hard rock", "rock", "R&B", "rock", "disco"}` will turn into `Set1 = {"rock" "R&B", "disco", "hard rock", "pop", "soul"}`
+        - *There cannot be duplicate values*
+    - Making a list into a set
+        - `newSet = set(list)`
+    - Operations
+        - `.add(*some value*)` adds a value to the set, if duplicate it will be dropped
+        - `.remove(*some value*)` removes a value from a set
+        - `*some value* in set` returns true or false if inside of set
+        - `set3 = *set 1* & *set 2*` takes the like items in both sets 1 and 2 and assigns them to set 3
+        - `set1.union(set2)` takes sets 1 and 2 and unions them into a single set
+        - `set1.issubset(set2)` checks to see if set1 is a subset of set2
+
+- Dictionaries
+    - Key value pairs
+    - dictionary = {"key1": 1, "key2": "hello", "key3": [1,2,3]}
+    - Key is used to lookup the value
+        - Lookup example: `dictionary["key2"] = "hello"`
+    - `... in ...` is used for basic lookup of keys
+    - `del(dictionary["key3"])` can be used to delete a key value pair
+    - `dictionary.keys()` returns a list of the keys
+        - Likewise for values with `.values()`
         
