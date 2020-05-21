@@ -330,11 +330,11 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
 
 - Branching <br/>
     ``if(age > 18):`` <br/>
-    ``  print("You can enter")``<br/>
+    >``print("You can enter")``<br/>
     ``elif(age == 18):``<br/>
-    ``  print("go to a different place")``<br/>
+    >``  print("go to a different place")``<br/>
     ``else:``<br/>
-    ``  print("You cannot enter")``
+    >``  print("You cannot enter")``
 
 - Logic Operators
     - `not(*some value*)` returns the opposite of its contents
@@ -346,11 +346,11 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
         - If two parameters (`range(M,N)`) the list output is M...N-1
     - for loop syntax: <br/>
         `for i in range(M,N):`<br/>
-        `*some kind of operation*`
+        >`*some kind of operation*`
         - for is possible also without using an index
     - enumerate takes an index, that indexes value and makes them available to manipulate <br/>
         `for i,square in enumerate(squares):` <br/>
-        `*square and i can be used for value and index*`
+        >`*square and i can be used for value and index*`
     - while loops are possible as well based on True or False in the initial expression
 
 - Functions
@@ -361,8 +361,8 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
         - `.sort()` sorts a list that is provided
     - Building a function <br/>
         `def add1(a):` <br/>
-        `b = a + 1` <br/>
-        `return b`
+        >`b = a + 1` <br/>
+        >`return b`
     - If a parameter of a tuple of list is passed with an asterik, this passes all of its values in to be evaluated
     - If a variable within a function has the word global in front of it then this makes it a global instead of just local value
 
