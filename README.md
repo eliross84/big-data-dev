@@ -323,4 +323,20 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
     - `del(dictionary["key3"])` can be used to delete a key value pair
     - `dictionary.keys()` returns a list of the keys
         - Likewise for values with `.values()`
-        
+
+- Comparison Operators
+    - `== or !=` produces True or False
+    - `>, <, >=, or <=` produces True or False
+
+- Branching
+    ``if(age > 18):``
+    ``  print("You can enter")``
+    ``elif(age == 18):``
+    ``  print("go to a different place")``
+    ``else:``
+    ``  print("You cannot enter")``
+
+- Logic Operators
+    - `not(*some value*)` returns the opposite of its contents
+    - `or(value1, value2)` returns false only if both are false, the rest are true
+    - `and(value1, value2)` returns true only if both are true, the rest are false
