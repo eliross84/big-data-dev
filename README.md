@@ -329,11 +329,11 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
     - `>, <, >=, or <=` produces True or False
 
 - Branching <br/>
-    ``if(age > 18):`` <br/>
+    ``if(age > 18):``
     >``print("You can enter")``<br/>
-    ``elif(age == 18):``<br/>
+    ``elif(age == 18):``
     >``  print("go to a different place")``<br/>
-    ``else:``<br/>
+    ``else:``
     >``  print("You cannot enter")``
 
 - Logic Operators
