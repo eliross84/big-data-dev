@@ -371,9 +371,9 @@ Transfers data between Hadoop and relational databases and uses MapReduce to imp
     - `.type()` will return its type
     - Creating classes: <br/>
         `class Circle(object):` <br/>
-        `def __init__(self, radius, color):` <br/>
-        `self.radius = radius;`<br/>
-        `self.color = color;`
+        `    def __init__(self, radius, color):` <br/>
+        `        self.radius = radius;`<br/>
+        `        self.color = color;`
     - This can be initialized as so `c1 = Circle(10, "red")`
     - An attribute may be accessed from the object such as `c1.radius`
     - When creating an instance method the self parameter must be placed at the beginning of the parameters in the method
